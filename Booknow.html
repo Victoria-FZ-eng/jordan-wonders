@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JoWonders-project201</title>
+    <link rel="stylesheet" href="css/stylebn.css">
+     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <title>Document</title>
+</head>
+<body>
+    <div class="divcontainer">
+    <header id="navbar">
+        <a href="" class="logo"><img src="/images/logo.png"class="logoimg" alt=""></a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destination.html">Destinations</a></li>
+            <li><a href="Booknow.html">Book</a></li>
+            <li><a href="About-Us.html">About us</a></li>
+        </ul>
+    </header>
+</div>
+   <main> 
+    <!-- <img id="arrow" src="imgbn/images-removebg-preview-removebg-preview.png"/> -->
+      <form id="bookingForm" style="display:none;">
+           <fieldset>
+            <legend>Make Reservation</legend>
+            <br>
+            <label for ="name">Name : </label>
+            <input type="text" id="name" required/>
+            <br>
+            <label for="number">Phone Number : </label>
+            <input type="tel" id="number" pattern="[0-9]{10}" required/>
+            <br>
+            <input type="submit" value="Reserve" id="reserve"/>
+        </fieldset>
+    </form>
+    <section id="confirmation" style="display:none;" >
+        <p>Thank You. We will contact you within 24 hours.</p>
+        <button id="ok">OK</button>
+    </section>
+    <h3 id="nexttrip">Book Your Next Trip with JoWonders</h3>
+         <section id="Filter"> 
+            <select name="choose your adventure" id="siteChosen">
+                 <option value="">Choose Your Adventure</option>
+                 <optgroup label="Hiking">
+                     <option value="Valley Of The Moon /Rum">Valley Of The Moon /Rum</option>
+                     <option value="Waleh Valley">Waleh Valley</option>
+                     <option value="Salaytah Valley">Salaytah Valley</option>
+                     <option value="Aya Valley">Aya Valley</option>
+                 </optgroup>
+                 <optgroup label="Relaxing">
+                    <option value="Dead Sea">Dead Sea</option>
+                    <option value="Maeen Hot Springs">Maeen Hot Springs</option>
+                    <option value="Aqaba">Aqaba</option>
+                    <option value="Ajloun Forest">Ajloun Forest</option>
+                 </optgroup>
+                 <optgroup label="Exploring">
+                    <option value="Petra">Petra</option>
+                    <option value="Down Town">Down Town</option>
+                    <option value="Salt">Salt</option>
+                    <option value="Jerash">Jerash</option>
+                    <option value="Amman Citadel">Amman Citadel</option>
+                    <option value="Karak Castle">Karak Castle</option>
+                    <option value="Ajloun Castle">Ajloun Castle</option>
+                 </optgroup>
+             </select>
+           <form id="details"> 
+            <label for="guide">Number of travellers </label>
+            <input type="number" min="1" maxlength="2" pattern="[1-9]{1}" id='persons' required>
+            <input type="checkbox" id="breakfast">
+            <label for="Include breakfast" > Include Breakfast</label>
+            <input type="checkbox" id="guide">
+            <label for="guide">Include Tour Guide</label>
+            <label for="tickets"> </label>
+            <input type="submit" value="Show tickets" id="seeCard" />   
+           </form>
+        <section id='cardsec'></section></div>
+        <div id="filler">        
+         <h2>Explore Jordan</h2>
+        <ul> <li>You are reminded of a civilization that once was, you can walk through the Siq and explore one of the seven wonders of the modern world, the Rose-red city of Petra.</li>
+             <li>Canyoning is the perfect way for thrill-seekers to experience the challenges and beauty of Jordan’s best and most spectacular canyons. Explore the breathtaking sandstone canyons of Wadi Mujib.</li>
+              <li>From the Lawrence of Arabia, Star wars till the Martin, be inspired by the spectacular Wadi Rum desert.</li>
+             <li>The lowest point on earth is just a few hours from your home, it does not matter whether it's summer or winter, the Dead Sea is always a good place to visit.</li>
+              <li>You have been home for a long time, and we know it was stressful, if diving is your thing, ensure you spend some time snorkeling the reefs in Aqaba.</li>
+        </ul>
+        </div>
+        <div id=rating>
+            <h2>Rate Your Experince!!</h2>
+            <div class="container">
+                <div class="post" id="test22">
+                    <div class="text">Thanks for rating us!</div>
+                    <div class="edit" id="test11">RATE AGAIN</div>
+                </div>
+                <div class="star-widget" id="test00">
+                    <input type="radio" name="rate" id="rate-5">
+                    <label for="rate-5" class="fas fa-star"></label>
+                    <input type="radio" name="rate" id="rate-4">
+                    <label for="rate-4" class="fas fa-star"></label>
+                    <input type="radio" name="rate" id="rate-3">
+                    <label for="rate-3" class="fas fa-star"></label>
+                    <input type="radio" name="rate" id="rate-2">
+                    <label for="rate-2" class="fas fa-star"></label>
+                    <input type="radio" name="rate" id="rate-1">
+                    <label for="rate-1" class="fas fa-star"></label>
+                    <form action="#">
+                        <header></header>
+                        <div class="textarea">
+                            <textarea cols="30" placeholder="Describe your experience."></textarea>
+                        </div>
+                        <div class="btn">
+                            <button id="Results" type="submit">Rate</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <script src="JS/appbn.js" style="display:none;"></script>
+        <footer class="footer-distributed">
+            <div class="footer-left">
+                <h3>JO<span>Wonders</span></h3>
+                <p class="footer-links">
+                    <a href="#" class="link-1">Home</a>
+                    <a href="#">Distiation</a>
+                    <a href="#">Book</a>
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                </p>
+                <p class="footer-company-name">JO Wonders © 2021</p>
+            </div>
+            <div class="footer-center">
+                <div>
+                    <i class="fa fa-map-marker"></i>
+                    <p><span>Visit us</span>Amman ,Jordan</p>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <p>+079654320</p>
+                </div>
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <p><a href="JOWonders@company.com">JOWonders@company.com</a></p>
+                </div>
+            </div>
+            <div class="footer-right">
+                <p class="footer-company-about">
+                    <span>About JoWonders</span>
+                    JoWonders aim to enhance the economy by encouraging the local tourism and support archaeological sites.
+                </p>
+                <div class="footer-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </footer>
+    </footer>
+</body>
+</html>

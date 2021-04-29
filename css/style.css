@@ -1,0 +1,192 @@
+
+.slideshow{
+
+        height: 700px;
+        width: 100%;
+        animation: slideshow 12s linear 0s infinite; 
+        /* animation: 3s infinite alternate slidein; */
+
+}
+
+/* //typewriting */
+
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
+.typewritten {
+  border-right: solid 3px rgba(179, 88, 103, 0.75);
+  white-space: nowrap;
+  overflow: hidden;    
+  font-family: 'Source Code Pro', monospace;  
+  font-size: 28px;
+  color: rgba(8, 6, 6, 0.7);
+  font-weight: bold;
+  font-size: 29px;
+}
+/* Animation */
+.typewritten {
+  animation: animated-text 4s steps(29,end) 1s 1 normal both,
+             animated-cursor 600ms steps(29,end) infinite;
+             position: absolute;
+             top: 150px;
+             left: 460px;
+}
+/* text animation */
+@keyframes animated-text{
+  from{width: 0;}
+  to{width:400px;}
+}
+/* cursor animations */
+@keyframes animated-cursor{
+  from{border-right-color: rgba(216, 65, 98, 0.75);}
+  to{border-right-color: transparent;}
+}
+
+
+/**/
+
+#loading {
+  text-align: center;
+  margin-top: 150px;
+
+}
+.loader-image{
+  width: 400px;
+}
+#page {
+  display: none;}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+#VisionAndMission{
+    position: relative;
+    margin: 3rem;
+    padding: 5rem;
+    font-family: 'Pacifico', cursive;
+    font-size: 1.5rem;
+}
+#VisionAndMission h3{
+    font-size: 2.5rem;
+}
+
+#v{
+    position: relative;
+    border: 1px;
+    border-radius: 3.5rem;
+    height: 370px;
+    width: 100%;
+    background-image: url('../img/bk.jpg');
+    
+  
+}
+#m{
+    position: relative;
+    top:5rem;
+    border: 1px;
+    border-radius: 3.5rem;
+    height: 370px;
+    width: 100%;
+    background-image: url('../img/bk.jpg');
+   
+    
+}
+#v img{
+    height: 250px;
+    width:30%;
+    position: absolute;
+    left :2rem;
+    top:3rem;
+}
+#v p{
+    border: 1px;
+    height: 10rem;
+    width:35rem;
+    position: absolute;
+    right: 4rem;
+    top:5rem;
+    
+}
+#v h3{
+    text-align: center;
+    border: 1px;
+    height: 10rem;
+    width:40rem;
+    position: absolute;
+    right: 4rem;
+    top:0;
+}
+
+#m img{
+    height: 280px;
+    width:40%;
+    position: absolute;
+    right :1rem;
+    top:3rem;
+}
+#m p{
+    border: 1px;
+    height: 12rem;
+    width:37rem;
+    position: absolute;
+    left: 2rem;
+    top:5rem;
+    
+}
+#m h3{
+    text-align: center;
+    border: 1px;
+    
+    width:40rem;
+    position: absolute;
+    left: 0rem;
+    top:0;
+}
+#book{
+    height:2rem;
+    width:5.5rem; 
+    border-radius: 1rem;
+    font-family: 'Pacifico', cursive;
+    background-color: #ffcb91;
+}
+#book:hover{
+    transform: scale(1.2);
+}
+
+#bookingForm{
+    border: 1px;
+    width:30%;
+    font-family: 'Pacifico', cursive;
+}
+
+#reserve, #ok{
+    margin: 0.5rem;
+    height:2rem;
+    width:4rem; 
+    border-radius: 1rem;
+    font-family: 'Pacifico', cursive;
+    background-color: #ffcb91;
+
+}
+
+#bookingForm{
+    z-index: 1;
+    text-align: center;
+    background-color: cornsilk;
+    position: absolute;
+    top:7rem;
+    left:35%;
+    
+}
+
+#bookingForm input:invalid{
+    border:1px red solid;
+}
+
+#bookingForm #name{
+    margin-left: 3.6rem;;
+}
+

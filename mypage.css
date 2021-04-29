@@ -1,0 +1,61 @@
+
+.links{
+  position: relative;
+  z-index: 1;
+   text-decoration: none;
+  color:cadetblue ;
+}
+#map{
+  margin-left: 27rem;
+}
+#ammanlink{
+  top: 20rem;
+  left: 11rem;
+}
+#jareshlink{
+  top: 13rem;
+  left: 3rem;
+}
+#aqabalink{
+  top: 34rem;
+  right: 5rem;
+}
+#madabalink{
+  top: 20rem;
+  right: 5rem;
+}
+#irbidlink{
+  top: 10rem;
+  right: 7rem;
+}
+#zarqalink{
+  top: 18rem;
+}
+#saltlink{
+  top: 18rem;
+  right: 14rem;
+}
+#karaklink{
+  top: 24rem;
+  right: 255px;
+}
+#maanlink{
+  top: 32rem;
+  right: 13rem;
+}
+#tafilalink{
+  top: 26rem;
+  right: 23rem;
+}
+#ajlounlink{
+  top: 12rem;
+  right: 25rem;
+}
+#mafraqlink{
+  top: 13rem;
+  right: 12rem;
+}
+
+.block{
+background-color: crimson;
+}
